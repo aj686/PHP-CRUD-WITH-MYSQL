@@ -1,0 +1,21 @@
+Add Student to MySQL database 
+
+1. Create Form (User assign input)
+2. Create Connection (Create connection between php and mysql)
+3. Create Submission (Write code for process submition input into database)
+    - require "connectiondb.php"
+    - if press buttion 'su' 
+    - input form process with example 'mysqli_real_escape_string($con, $_POST['name'])'
+    - store into variable name $name
+    - query to database 'INSERT INTO [tablename] (name, email, phone) VALUES ('$name', '$email', '$phone')' 
+    - mysqli_query ($con, $sql)
+    - if mysqli_query submitted
+    - display 'Student Created Successfully'
+    - go to header(location:index.php) and exit(0)
+    - else display 'Student Not Created'
+    - go to header(location:index.php) and exit(0)
+
+4. Create the message.php (indicator for query)
+    - $_SESSION['message']
+
+

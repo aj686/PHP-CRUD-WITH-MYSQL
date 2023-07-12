@@ -1,0 +1,11 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+$theme-bg : rgb(108, 167, 250);
+$overlap : 100px;
+
+
+body {
+    background-color: $theme-bg;
+    padding-top: $overlap;
+}
